@@ -22,6 +22,6 @@ class Song < ActiveRecord::Base
   end
 
   def notes_attributes=(notes)
-    
+    notes.each do |note|
   end
 end
