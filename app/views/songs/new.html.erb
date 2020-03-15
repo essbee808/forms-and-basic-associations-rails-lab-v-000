@@ -10,7 +10,9 @@
   <%= f.label :genre_id %><br>
   <%= f.collection_select :genre_id, Genre.all, :name, :name %><br>
   <br>
+  
   <%= f.fields_for :notes do |ff| %>
+    
   <% end %>
   <%= f.submit %>
 <% end %>
