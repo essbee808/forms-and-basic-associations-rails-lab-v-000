@@ -11,7 +11,7 @@
   <%= f.collection_select :genre_id, Genre.all, :name, :name %><br>
   <br>
 
-  <%= fields_for 'song[notes]', notes, :index => notes do |content| %>
+  <%= fields_for 'song[notes]', notes, :index => notes do |note_form| %>
     <%= content.text_field :content %>
   <%= f.submit %>
 <% end %>
