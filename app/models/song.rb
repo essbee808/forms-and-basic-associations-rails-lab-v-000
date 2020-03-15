@@ -21,12 +21,6 @@ class Song < ActiveRecord::Base
     self.genre ? self.genre.name : nil
   end
 
-  # def notes_attributes=(hash)
-  #     hash.each do |attribute|
-  #       note = Note.find_or_create_by()
-  #       self.notes << note
-  #     end
-
-
+  
 
 end
