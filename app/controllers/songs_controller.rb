@@ -53,7 +53,7 @@ class SongsController < ApplicationController
       :artist_name,
       :genre_id,
       notes_attributes: [
-        :attribute_1, :attribute_2, :attribute_3
+        :content_1, :content_2, :content_3
       ]
     )
   end
