@@ -11,9 +11,9 @@
   <%= f.collection_select :genre_id, Genre.all, :name, :name %><br>
   <br>
   <%= f.fields_for :notes do |attribute| %>
-    <%= note.text_field :attribute_1 %><br>
-    <%= note.text_field :attribute_2 %><br>
-    <%= note.text_field :attribute_3 %><br>
+    <%= note.text_field :content_1 %><br>
+    <%= note.text_field :content_2 %><br>
+    <%= note.text_field :content_3 %><br>
   <% end %>
   <%= f.submit %>
 <% end %>
