@@ -15,6 +15,7 @@ class SongsController < ApplicationController
     @song = Song.new(song_params)
 
     if @song.save
+      puts params.inspect
       redirect_to @song
     else
       render :new
