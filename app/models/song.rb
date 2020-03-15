@@ -21,7 +21,7 @@ class Song < ActiveRecord::Base
     self.genre ? self.genre.name : nil
   end
 
-  def notes_attributes=(content)
+  def notes_attributes=(array)
     
     end
   end
