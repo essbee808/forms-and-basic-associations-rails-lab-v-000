@@ -14,5 +14,6 @@
   <%= f.fields_for :notes do |note_fields| %>
     <%= note_fields.text_field :content_0 %>
     <%= note_fields.text_field :content_1 %>
+  <% end %>
   <%= f.submit %>
 <% end %>
