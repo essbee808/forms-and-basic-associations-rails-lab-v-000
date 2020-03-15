@@ -4,6 +4,7 @@ class Song < ActiveRecord::Base
   belongs_to :genre
   has_many :notes
   accepts_nested_attributes_for :notes
+  
   def artist_name=(name)
     self.artist = Artist.find_or_create_by(name: name)
     #setter method is called whenever Song is initialized with an artist_name field
