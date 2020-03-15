@@ -2,9 +2,9 @@ class Song < ActiveRecord::Base
   # add associations here
   belongs_to :artist
   belongs_to :genre
-  has_many :notes, :allow_destroy => true
+  has_many :notes
 
-  accepts_nested_attributes_for :notes
+  accepts_nested_attributes_for :notes, :allow_destroy => true
 
   def artist_name=(name)
     self.artist = Artist.find_or_create_by(name: name)
