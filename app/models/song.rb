@@ -22,7 +22,7 @@ class Song < ActiveRecord::Base
   end
 
   def notes_attributes=(notes)
-    attributes.each do |a|
+    notes.each do |a|
       new_note = Note.create(content: )
     end
   end
