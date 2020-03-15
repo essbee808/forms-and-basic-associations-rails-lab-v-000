@@ -12,6 +12,6 @@
   <br>
 
   <%= fields_for 'song[notes]', notes, :index => notes do |note_form| %>
-    <%= content.text_field :content %>
+    <%= note_form.text_field :content %>
   <%= f.submit %>
 <% end %>
