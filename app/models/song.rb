@@ -27,4 +27,7 @@ class Song < ActiveRecord::Base
       self.notes << new_note
     end
   end
+
+  def notes_attributes
+  end
 end
