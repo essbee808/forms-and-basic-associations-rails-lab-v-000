@@ -24,5 +24,5 @@ class Song < ActiveRecord::Base
   end
 
   def content
-
+  end
 end
