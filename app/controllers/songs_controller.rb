@@ -52,8 +52,7 @@ class SongsController < ApplicationController
     params.require(:song).permit(
       :title,
       :artist_name,
-      :genre_id,
-      notes: [:content, :song_id, '_destroy']
+      :genre_id
     )
   end
 end
