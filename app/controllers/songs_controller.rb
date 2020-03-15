@@ -54,6 +54,6 @@ class SongsController < ApplicationController
       :artist_name,
       :genre_id
     )
-    @song.notes
+    
   end
 end
