@@ -56,5 +56,6 @@ class SongsController < ApplicationController
       :notes_attributes => [:content, :id]
     )
     @song = Song.new(song_attributes)
+    @song.notes = notes_attributes
   end
 end
