@@ -11,6 +11,6 @@
   <%= f.collection_select :genre_id, Genre.all, :name, :name %><br>
   <br>
 
-  <input name="">
+  <input name="song[]">
   <%= f.submit %>
 <% end %>
