@@ -22,11 +22,4 @@ class Song < ActiveRecord::Base
     self.genre ? self.genre.name : nil
   end
 
-  def notes_attributes=(notes)
-    notes.each do |note|
-      new_note = Note.create(content: note)
-      self.notes << new_note
-    end
-  end
-
 end
