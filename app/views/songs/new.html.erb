@@ -11,8 +11,7 @@
   <%= f.collection_select :genre_id, Genre.all, :name, :name %><br>
   <br>
 
-  <%= f.fields_for :notes do |note_contents| %>
-    <%= @song.notes
-  <% end %>
+  <%= f.fields_for :notes do |note_fields| %>
+    <%= note_fields.text_field :content %>
   <%= f.submit %>
 <% end %>
