@@ -12,8 +12,8 @@
   <br>
 
   <%= f.fields_for :notes do |content| %>
-    <%= content.text_field :content %>
     <%= content.text_field :content_1 %>
+    <%= content.text_field :content_2 %>
   <% end %>
   <%= f.submit %>
 <% end %>
